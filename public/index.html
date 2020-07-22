@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Firebase-test</title>
-</head>
-<body>
 
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.16.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.16.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.16.1/firebase-database.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="init()">
+    <button onclick="logoff()">Logoff</button>
+
+    <!-- login block -->
+    <div id="login-block" class="modal_block" style="display: none">
+        <form action="javascript:void(0);" onsubmit="login()">
+            <div class="wrap modal_input">
+                <label for="email">E-mail:</label><input id="email" type="email">
+                <label for="password">Password:</label><input id="password" type="password">
+            </div>
+            <div class="wrap">
+                <button id="submit">Войти</button>
+                <button id="register" type="reset" onclick="showReg()">Регистрация</button>
+            </div>
+        </form>
+    </div>
 </body>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
 </html>

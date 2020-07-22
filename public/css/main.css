@@ -1,0 +1,13 @@
+button {
+    height: 1.5em;
+    width: 10em;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: large;
+    margin: 2em;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+}
