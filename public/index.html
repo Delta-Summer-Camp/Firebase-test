@@ -31,6 +31,23 @@
             </div>
         </form>
     </div>
+
+    <!-- registration block -->
+    <div id="reg-block" class="modal_block" style="display: none">
+        <form action="javascript:void(0);" onsubmit="register()">
+            <div class="wrap modal_input">
+                <label for="reg-email">E-mail:</label><input id="reg-email" type="email">
+                <label for="reg-password">Password:</label><input id="reg-password" type="password">
+            </div>
+            <div class="wrap modal_input">
+                <label for="reg-nickname">Nickname:</label><input id="reg-nickname" type="text">
+                <label for="reg-password2">Password again:</label><input id="reg-password2" type="password">
+            </div>
+            <div class="wrap">
+                <button id="reg-submit">Зарегистрироваться</button>
+            </div>
+        </form>
+    </div>
 </body>
 <script src="js/main.js"></script>
 <script src="js/auth.js"></script>

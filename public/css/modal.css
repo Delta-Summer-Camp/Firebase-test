@@ -17,6 +17,10 @@
     padding: 2.5em;
 }
 
+.modal_input {
+    margin-bottom: 2em;
+}
+
 .modal_input input {
     width: 15em;
     height: 1.5em;
