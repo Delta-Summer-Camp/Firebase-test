@@ -1,4 +1,6 @@
+let database = null; // database reference
+let currentUser = null; // current user
+
 function init() {
-    // Am I authorized?
-    isAuth();
+    auth().then(updateChat);
 }

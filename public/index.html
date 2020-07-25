@@ -16,7 +16,71 @@
     <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body onload="init()">
-    <button onclick="logoff()">Logoff</button>
+    <button class="big_button" onclick="logoff()">Logoff</button>
+
+    <!-- Chat -->
+    <div class="chat_wrap">
+        <div class="chat_scroll" id="chat_scroll">
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <p>Hello, World!</p>
+            <!-- This part dynamically updated from updateChatFeed() in main.js -->
+        </div>
+        <div class="chat_input_wrap">
+            <input type="text" id="newChatEntry" class="chat_input" placeholder="Type here!" autocomplete="off">
+            <button class="chat_btn" id="chat_btn">&gt;</button>
+        </div>
+    </div>
 
     <!-- login block -->
     <div id="login-block" class="modal_block" style="display: none">
@@ -51,4 +115,5 @@
 </body>
 <script src="js/main.js"></script>
 <script src="js/auth.js"></script>
+<script src="js/chat.js"></script>
 </html>

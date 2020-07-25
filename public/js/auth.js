@@ -2,14 +2,25 @@ function logoff() {
     firebase.auth().signOut();
 }
 
-function isAuth() {
-    firebase.auth().onAuthStateChanged((user) => {
-        if(user == null) {
-            document.getElementById('login-block').style.display = 'block';
-        } else {
-            document.getElementById('login-block').style.display = 'none';
-            document.getElementById('reg-block').style.display = 'none';
-        }
+function auth() {
+    return new Promise((resolve, reject) => {
+        firebase.auth().onAuthStateChanged((user) => {
+            if (user == null) {
+                document.getElementById('login-block').style.display = 'block';
+                reject('User not logged in');
+            } else {
+                document.getElementById('login-block').style.display = 'none';
+                document.getElementById('reg-block').style.display = 'none';
+
+                database = firebase.database();
+                if (database == null) {
+                    reject('Unable to open Database reference');
+                } else {
+                    currentUser = user;
+                    resolve();
+                }
+            }
+        });
     });
 }
 
